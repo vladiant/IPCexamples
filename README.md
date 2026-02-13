@@ -3,6 +3,11 @@
 ## Pipes (Anonymous/Named)
 
 ## Shared Memory
+- **Producer**: Generates sensor data (temperature, pressure, voltage, error codes)
+- **Consumer**: Reads sensor data from shared memory
+- Synchronized access using POSIX semaphores
+- Sequence number tracking to detect missed packets
+- Automatic cleanup on shutdown
 
 ## Message Queues
 The sender transmits prioritized messages, and the receiver processes them in priority order.
