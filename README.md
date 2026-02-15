@@ -17,7 +17,11 @@ The sender transmits prioritized messages, and the receiver processes them in pr
 - Multiple message types with different priorities
 - Queue overflow protection
 
-## Sockets
+## Sockets (Unix Domain Sockets)
+- **Server**: Simulates vehicle data streaming (speed, RPM, fuel level, gear, engine status)
+- **Client**: Receives and displays real-time vehicle data
+- Connection-oriented communication with automatic reconnection handling
+- Graceful shutdown with signal handling
 
 ## Signals
 
