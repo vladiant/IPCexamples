@@ -31,5 +31,11 @@ The sender transmits prioritized messages, and the receiver processes them in pr
 
 ## File Mapping/Shared Files
 
+## Performance Considerations
+
+- **Sockets**: Good for moderate data rates, flexible, easy to extend to network sockets
+- **Shared Memory**: Fastest IPC method, ideal for high-frequency data (>1kHz)
+- **Message Queues**: Best for event-driven systems, built-in priority support
+
 ## References
 * <https://github.com/shake0/IPC-demo>
