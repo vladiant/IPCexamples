@@ -31,6 +31,24 @@ The sender transmits prioritized messages, and the receiver processes them in pr
 
 ## File Mapping/Shared Files
 
+## Automotive Use Cases
+
+### Sockets
+- ECU-to-gateway communication
+- Diagnostic tool interfaces
+- Real-time data streaming between processes
+
+### Shared Memory
+- High-frequency sensor data sharing
+- Camera/LIDAR data buffers
+- Low-latency control loops
+
+### Message Queues
+- Event-driven architectures
+- Priority-based message handling
+- Asynchronous command/response patterns
+- Fault management systems
+
 ## Performance Considerations
 
 - **Sockets**: Good for moderate data rates, flexible, easy to extend to network sockets
