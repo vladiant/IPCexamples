@@ -23,6 +23,13 @@ The sender transmits prioritized messages, and the receiver processes them in pr
 - Connection-oriented communication with automatic reconnection handling
 - Graceful shutdown with signal handling
 
+## Pipe Communication
+- **Anonymous Pipe**: Parent-child process communication for CAN message simulation
+- **Named Pipe (FIFO)**: Unrelated process communication for diagnostic events
+- Unidirectional data streaming
+- Blocking and non-blocking I/O modes
+- Automatic cleanup on process termination
+
 ## Signals
 
 ## Semaphores & Mutexes
@@ -49,11 +56,18 @@ The sender transmits prioritized messages, and the receiver processes them in pr
 - Asynchronous command/response patterns
 - Fault management systems
 
+### Pipes
+- CAN bus data forwarding between processes
+- Log streaming and aggregation
+- Parent-child process communication
+- Simple data pipelines without complex synchronization
+
 ## Performance Considerations
 
 - **Sockets**: Good for moderate data rates, flexible, easy to extend to network sockets
 - **Shared Memory**: Fastest IPC method, ideal for high-frequency data (>1kHz)
 - **Message Queues**: Best for event-driven systems, built-in priority support
+- **Pipes**: Fast for streaming data, simple API, limited to unidirectional flow
 
 ## References
 * <https://github.com/shake0/IPC-demo>
