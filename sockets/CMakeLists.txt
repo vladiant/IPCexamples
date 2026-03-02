@@ -1,3 +1,7 @@
+cmake_minimum_required(VERSION 3.15)
+project(sockets_demo VERSION 1.0.0 LANGUAGES CXX)
+
+find_package(Threads REQUIRED)
 add_executable(socket_server socket_server.cpp)
 target_link_libraries(socket_server PRIVATE Threads::Threads)
 

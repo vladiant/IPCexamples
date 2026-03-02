@@ -1,3 +1,8 @@
+cmake_minimum_required(VERSION 3.15)
+project(pipes_demo VERSION 1.0.0 LANGUAGES CXX)
+
+find_package(Threads REQUIRED)
+
 add_executable(anonymous_pipe anonymous_pipe.cpp)
 target_link_libraries(anonymous_pipe PRIVATE Threads::Threads)
 
